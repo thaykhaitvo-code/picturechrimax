@@ -1,11 +1,11 @@
 import React, { useState, useCallback } from 'react';
-import { Header } from './components/Header';
-import { Controls } from './components/Controls';
-import { ImageGallery } from './components/ImageGallery';
-import { generateChristmasImages } from './services/geminiService';
-import { OUTFIT_OPTIONS, SCENE_OPTIONS, ART_STYLES } from './constants';
-import type { Outfit, Scene } from './types';
-import { fileToBase64 } from './utils/fileUtils.tsx';
+import { Header } from '@/components/Header';
+import { Controls } from '@/components/Controls';
+import { ImageGallery } from '@/components/ImageGallery';
+import { generateChristmasImages } from '@/services/geminiService';
+import { OUTFIT_OPTIONS, SCENE_OPTIONS, ART_STYLES } from '@/constants';
+import type { Outfit, Scene } from '@/types';
+import { fileToBase64 } from '@/utils/fileUtils.tsx';
 
 const App: React.FC = () => {
     const [uploadedImage, setUploadedImage] = useState<string | null>(null);
