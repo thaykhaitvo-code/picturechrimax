@@ -1,7 +1,7 @@
 {
-  "name": "ai-chân-dung-giáng-sinh",
+  "name": "ai-chan-dung-giang-sinh",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -18,5 +18,11 @@
     "@vitejs/plugin-react": "^5.0.0",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
+  },
+  "vercel": {
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist",
+    "framework": "vite",
+    "installCommand": "npm install"
   }
 }
